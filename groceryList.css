@@ -29,7 +29,7 @@ header {
 	margin: 0 auto;
 }
 
-header h1{ 
+h1{ 
 	font-size: 2.5rem;
 	font-weight: 300;
 	color: var(--brown);
@@ -37,7 +37,7 @@ header h1{
 }
 
 #new-task-form {
-	display: flex;;
+	display: flex;
 }
 
 input, button {
@@ -57,21 +57,24 @@ input, button {
 	font-size: 1.25rem;
 }
 
+/*add here placeholder*/
 #new-task-input::placeholder {
 	color: var(--dark);
 }
 
+/*add task button*/
 #new-task-submit {
 	color: var(--brown);
 	font-size: 1.25rem;
 	font-weight: 700;
 	background-image: linear-gradient(to right, var(--darkbrown), var(--dark));
-	-webkit-background-clip: text;
+  -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
 	transition: 0.4s;
 }
 
+/*when you press add task, light change in color*/
 #new-task-submit:hover {
 	opacity: 0.8;
 }
@@ -79,10 +82,10 @@ input, button {
 #new-task-submit:active {
 	opacity: 0.6;
 }
-
+/*positioning of the GROCERIES*/
 main {
 	flex: 1 1 0%;
-	max-width: 800px;
+	max-width: 780px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -90,14 +93,15 @@ main {
 .task-list {
 	padding: 1rem;
 }
-
+/*Groceries*/
 .task-list h2 {
 	font-size: 1.5rem;
-	font-weight: 300;
+	font-weight: 200;
+  padding: 1rem;
 	color: var(--brown);
 	margin-bottom: 1rem;
 }
-
+/* for the task padding*/
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
@@ -108,45 +112,39 @@ main {
 }
 
 .task .content {
-	flex: 1 1 0%;
+	flex: 1 0 0%;
 }
 
 .task .content .text {
 	color: var(--light);
-	font-size: 1.125rem;
+	font-size: 1.15rem;
 	width: 100%;
 	display: block;
 	transition: 0.4s;
 }
 
+/*when you edit, it changes color after saved*/
 .task .content .text:not(:read-only) {
-	color: var(--light);
+	color: var(--brown);
 }
 
 .task .actions {
 	display: flex;
-	margin: 0 -0.5rem;
+	margin: 0.5rem;
 }
 
 .task .actions button {
 	cursor: pointer;
-	margin: 0 0.5rem;
+	margin:  0.5rem;
 	font-size: 1.125rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	transition: 0.4s;
 }
 
-.task .actions button:hover {
-	opacity: 0.8;
-}
-
-.task .actions button:active {
-	opacity: 0.6;
-}
-
 .task .actions .edit {
-	background-image: linear-gradient(to rightvar(--light), var(--darkbrown));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  color: black
+	
 }
+
+

@@ -7,11 +7,12 @@
   
   <title>Home</title>
   <link rel="shortcut icon" href="/images/Icon.jpeg" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
   <style>
     @media(max-width: 500px) {
       .reverse-columns {
@@ -19,7 +20,7 @@
         display: flex;
       }
     }
-
+    
     .titled {
       font-family: 'Merriweather', serif !important;
       font-size: 58px !important;
@@ -37,7 +38,7 @@
 </head>
 
 <body>
-  
+
   <!-- NavBar -->
  <nav class="navbar" role="navigation" aria-label="main navigation">
  <div class="navbar-brand">  
@@ -46,39 +47,41 @@
     </div>
   
     <div class="navbar-menu">
-    
+      
       <div class="navbar-end">
   
         <a class="navbar-item" 
-          href="Index.html">
+          href="index.html">
           HOME
         </a>
-      
 
         <a class="navbar-item"
           href="Recipe.html">
-          RECIPES 
+          RECIPES
         </a>
 
+        <a class="navbar-item"
+          href="moreRecipes.html">
+          SPECIFIC RECIPES
+        </a>
+        
         <a class="navbar-item"   
           href="groceryList.html">
           GROCERY LIST
         </a>
 
-        <a class="navbar-item" 
-          href="Gallery.html">
-          GALLERY
+         <a class="navbar-item" 
+          href="randomList.html">
+          NEED IDEAS?
         </a>
-
-        <a class="navbar-item" 
-          href="Contact.html">
-          CONTACT US
-        </a>
+        
       </div>
     </div>
   </nav>
 
   <!-- Hero del producto -->
+     <section id = "top" class="hero is-white is-fullheight">
+    <div class="hero-body">
       <div class="container">
         <div class="columns  is-vcentered reverse-columns">
           <div class="column
@@ -87,8 +90,9 @@
           is-5-desktop 
           is-5-widescreen 
           is-5-fullhd " data-aos="fade-down">
-            <h1 class="title titled is-1 mb-6">
-              Welcome to: The Hunger Games 
+           <h1 class="title titled is-1 mb-6">
+             Welcome to: The Hunger Games
+               
             </h1>
             <div class="buttons">
               <button class="button is-yellow">Log in</button>
@@ -112,7 +116,7 @@
     </div>
   </section>
 
-  <section class="hero is-white is-fullheight">
+  <section id = "MovingPics" class="hero is-white is-fullheight">
     <div class="hero-body">
       <div class="container">
         <div class="columns  is-vcentered">
@@ -145,7 +149,7 @@
     </div>
   </section>
 
-  <section class="hero is-white is-fullheight">
+  <section id = "MovingPics2" class="hero is-white is-fullheight">
     <div class="hero-body">
       <div class="container">
         <div class="columns  is-vcentered reverse-columns">
@@ -178,7 +182,7 @@
     </div>
   </section>
 
-  <section class="hero is-medium has-text-centered">
+  <section id = "bottom" class="hero is-medium has-text-centered">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
@@ -211,6 +215,56 @@
       once: true
     });
   </script>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+    
+    <h3>Hunger Games</h3>
+      <p>@CSSI '22</p>
+    
+
+    <p class="footer-company-name">The Hunger Games © 2022</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+1.555.555.5555</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
 </body>
+
 
 </html>

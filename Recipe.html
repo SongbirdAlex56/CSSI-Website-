@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-    <title>Recipes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/hero.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <style>
-    .columns:nth-child(2)
-    {margin-top: -10rem;}
-    </style>
-  </head>
-  <body>
-    
-    <nav class="navbar" role="navigation" aria-label="main navigation">
- <div class="navbar-brand">
-  <img src="/images/Icon.jpeg" width="60" height="135"
-    </nav>
-    </div>
-    
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Recipes</title>
+  <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+	<!-- Bulma Version 0.9.0-->
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="recipe.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--   START NAV -->
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+   <div class="navbar-brand">
+    <img src="/images/Icon.jpeg" width="60" height="135"
+  </nav>
+    </div>
+  
     <div class="navbar-menu">
 
       <div class="navbar-end">
@@ -38,333 +32,90 @@
           RECIPES 
         </a>
 
-        <a class="navbar-item" href="groceryList.html">
-          GROCERY LIST
+        <a class="navbar-item"   
+         href="moreRecipes.html">
+          SPECIFIC RECIPES
         </a>
 
-        <a class="navbar-item" href="Gallery.html">
-          GALLERY
+        <a class="navbar-item" href="groceryList.html">
+          GROCERY LIST
         </a>
 
         <a class="navbar-item" href="Contact.html">
           CONTACT US
         </a>
-
+        
       </div>
     </div>
   </nav>
-    <section class="hero is-dark is-small">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">
-            Recipes 
-          </p>
-          <p class="subtitle">
-            Take a look at some of our most popular receipes. Go ahead and try some out for yourself! 
-          </p>
-        </div>
-      </div>
-    </section>
-    <div class="box cta">
-      <p class="has-text-centered">
-        
+	<!-- END NAV  -->
+  
+  <div class="main-container">
+  <div class="heading">
+    <h1 class="heading__title">RECIPES</h1>
+    <p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">Try Some of These Amazing Recipes Out!</a></p>
+  </div>
+    
+  <div class="cards">
+    <div class="card card-1">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title"> 10-Minute Risotto Cups </h2>
+      <p class="card__apply">
+        <a class="card__link" href="https://www.brit.co/microwave-risotto/">View Recipe Here <i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
-    <section class="container">
-      <div class="columns features">
-        <div class="column is-3">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://inquiringchef.com/wp-content/uploads/2016/10/20-Minute-Chicken-Ramen-Stirfry-500x375.jpg" alt="stir fry" class="modal-button" data-target="modal-image2">
-              </figure>
-            </div>
-           <div class="card-content">
-               <div class="content">
-                <h4> Ramen Stir-Fry</h4>
-                <p>These twirly ramen noodles are fun to eat, and you can throw all kinds of veggies and spices into them. </p>
-                <span class="button is-dark modal-button" data-target="modal-image2">Get Recipe Now!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-3">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-3by3">
-                <img src="https://assets.rbl.ms/21969913/origin.jpg" alt="Risotto Cups">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Recipe 2: 10 Minute Risotto Cups</h4>
-                <p>It takes less time to decide what to watch on Netflix tonight than it does to prepare these scrumptious dinners in the microwave.</p>
-                <span class="button is-dark modal-button" data-target="modal-card">Get Recipe Now!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-3 modal-button" data-target="modal-image">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-3by3">
-                <img src="https://www.lecremedelacrumb.com/wp-content/uploads/2021/06/chicken-gyros-7sm-5-500x500.jpg" alt="gyro">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Recipe 3: Easy Chicken Gyros</h4>
-                <p>These gyros are so easy to make! Make an extra one now for a quick meal!</p>
-                <span class="button is-dark modal-button"  data-target="modal-image">Get Recipe Now!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="columns features">
-        <div class="column is-3 modal-button" data-target="modal-card">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-3by3">
-                <img src="https://www.inspiredtaste.net/wp-content/uploads/2018/09/Easy-Chicken-Noodle-Soup-Recipe-1200.jpg" alt="Soup">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Recipe 4: Chicken Noodle Soup</h4>
-                <p>This chicken noodle soup will keep you warm on the chilliest winter days, we guarantee.</p>
-                <span class="button is-dark modal-button">Get Recipe Now!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-3">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-3by3">
-                <img src="https://www.brit.co/media-library/chocolate-muffin.jpg?id=21881540&width=980" alt="butterfly image" class="modal-button" data-target="modal-image4">
-              </figure>
-            </div>
-            <div class="card-content  modal-button" data-target="modal-card2">
-              <div class="content">
-                <h4>Recipe 5: Chocolate Muffin</h4>
-                <p>We can eat it for breakfast if it is categorized as muffin, right? Right?</p>
-                <span class="button is-dark modal-button">Get Recipe Now!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!--  ===============
-    HERE BE MODALS
-    ===============  -->
-    <!-- 3dFlipVertical card tiny -->
-    <div id="modal-card" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-tiny">
-        <!-- Chicken noodle soup content -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://www.culinaryhill.com/wp-content/uploads/2020/01/Chicken-Noodle-Soup-Ingredients-Culinary-Hill-1.jpg" alt="chicken noodle soup ingredients">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="https://media.istockphoto.com/vectors/crossed-fork-and-spoon-icon-vector-isolated-flat-design-illustration-vector-id1205148161?k=20&m=1205148161&s=170667a&w=0&h=vZYWPGpB5mfmKf9l7yGjAoDhRicsg5AzLp3nky7yn-U=" alt="fork and spoon">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Chicken Noodle Soup</p>
-                <p class="subtitle is-6"></p>
-              </div>
-            </div>
-            <div class="content">
-              <ul>Ingredients
-                <li>2 Boneless, Skinless Chicken Breasts or Thighs</li>
-                <li>Salt and Dried Thyme</li>
-                <li>Olive Oil</li>
-                <li>1 Small Onion</li>
-                <li>1 Celery Stalk</li>
-                <li>1 Carrot</li>
-                <li>3 Cloves of Garlic</li>
-                <li>Chicken Broth</li>
-                <li>Small or Medium-Sized Dried Pasta.</li>
-              </ul>
-                         
-            </div>
-          </div>
-        </div>
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
+    <div class="card card-2">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Chicken Gyros</h2>
+      <p class="card__apply">
+        <a class="card__link" href="https://comfortablydomestic.com/2015/06/grilled-chicken-gyros/">view Recipe Here <i class="fas fa-arrow-right"></i></a>
+      </p>
     </div>
-    <!-- end tiny modal card -->
-    <!-- 3dFlipVertical card tiny [butterfly] -->
-    <div id="modal-card2" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-tiny">
-        <!-- Muffin Ingredients content -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is 4by3">
-              <img src="https://preppykitchen.com/wp-content/uploads/2021/04/English-Muffins-ingredients-preppy-kitchen-2-1.jpg" alt="muffin ingredients">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="https://media.istockphoto.com/vectors/crossed-fork-and-spoon-icon-vector-isolated-flat-design-illustration-vector-id1205148161?k=20&m=1205148161&s=170667a&w=0&h=vZYWPGpB5mfmKf9l7yGjAoDhRicsg5AzLp3nky7yn-U=" alt="fork and spoon">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Chocolate Muffin</p>
-                <p class="subtitle is-6"></p>
-              </div>
-            </div>
-            <div class="content">
-              <ul>Ingredients
-                <li>1 tbs Ground Flaxseed</li>
-                <li>1/3 Cup of Unsweetened Vanilla Almond Milk</li>
-                <li>1/4 Cup Unsweetened Applesauce</li>
-                <li>4 packets Natural Sweetener</li>
-                <li>1/8 tsp Salt</li>
-                <li>15g (3 tbs) Unsweetened Natural Cocoa Powder</li>
-                <li>45g (6 tbs) Oat Flour</li>
-                <li>1 tsp Double-Acting Baking Powder</li>
-                
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
+    <div class="card card-3">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Ramen Stir Fry</h2>
+      <p class="card__apply">
+        <a class="card__link" href="https://soupaddict.com/ramen-noodle-stir-fry/">View Recipe Here <i class="fas fa-arrow-right"></i></a>
+      </p>
     </div>
-    <!-- end tiny modal card -->
-    <!-- Image modal -->
-    <div id="modal-image2" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-huge is-image">
-        <!-- Stir Fry content -->
-        <div class= "card">
-          <div class="card-image">
-            <figure class= "image is 4by3">
-              <img src="https://www.jocooks.com/wp-content/uploads/2019/06/chicken-ramen-stir-fry-ingredients.jpg" alt="stir fry ingredients">
-            </figure>
-          </div>
-          <div class= "card-content">
-            <div class= "media">
-              <div class= "media-left">
-                <figure class= "image is-48x48">
-                  <img src="https://media.istockphoto.com/vectors/crossed-fork-and-spoon-icon-vector-isolated-flat-design-illustration-vector-id1205148161?k=20&m=1205148161&s=170667a&w=0&h=vZYWPGpB5mfmKf9l7yGjAoDhRicsg5AzLp3nky7yn-U=" alt="fork and spoon">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class= "title is-4">Stir Fry Ingredients</p>
-                <p class="subtitle is-6"</p>
-              </div>
-            </div>
-            <div class="content">
-              <ul>Ingredients
-                <li>9 ounces ramen noodles</li>
-                <li>1 tablespoon peanut oil</li>
-                <li>1 teaspoon minced garlic</li>
-                <li>1 teaspoon minced ginger</li>
-                <li>4 ounces shiitake mushroom</li>
-                <li>1 small head of broccoli</li>
-                <li>1/2 red bell pepper</li>
-                <li>1 heaping tablespoon minced cilantro</li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-      
-          
-                  
-        
-        
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
+    <div class="card card-4">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Chicken Noodle Soup</h2>
+      <p class="card__apply">
+        <a class="card__link" href="https://www.averiecooks.com/easy-30-minute-homemade-chicken-noodle-soup/">View Recipe Here <i class="fas fa-arrow-right"></i></a>
+      </p>
     </div>
-    <!-- Image modal -->
-    <div id="modal-image4" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-huge is-image">
-        <!-- Muffin content -->
-        <img src="https://preppykitchen.com/wp-content/uploads/2021/04/English-Muffins-ingredients-preppy-kitchen-2-1.jpg" alt="muffin">
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
+    <div class="card card-5">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Chocolate Muffins</h2>
+      <p class="card__apply">
+        <a class="card__link" href="https://dessertswithbenefits.com/single-serving-chocolate-microwave-muffin-with-peanut-butter-icing/">View Recipe Here <i class="fas fa-arrow-right"></i></a>
+      </p>
     </div>
-    <!-- Image modal-->
-    <div id="modal-image" class="modal modal-fx-superScaled">
-      <div class="modal-background"></div>
-      <div class="modal-content  is-image">
-        <!-- Gyro Ingredients -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is 4by3">
-              <img src="https://www.jocooks.com/wp-content/uploads/2020/06/chicken-gyros-ingredients.jpg" alt="gyro">
-            </figure>
-          </div>
-        <!--Inside Gyro Card -->
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="https://media.istockphoto.com/vectors/crossed-fork-and-spoon-icon-vector-isolated-flat-design-illustration-vector-id1205148161?k=20&m=1205148161&s=170667a&w=0&h=vZYWPGpB5mfmKf9l7yGjAoDhRicsg5AzLp3nky7yn-U=" alt="fork and spoon">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Chicken Gyro</p>
-                <p class="subtitle is-6"></p>
-              </div>
-            </div>
-            <div class="content">
-              <ul>Ingredients
-                <li>8 ounces chicken breast cooked any way you’d like</li>
-                <li>2-4 leaves romaine lettuce trimmed</li>
-                <li>1/2 cup grape tomatoes</li>
-                <li>1/4 English cucumber sliced thin</li>
-                <li>2 fluffy pita breads</li>
-                <li>1/4 cup extra virgin olive oil</li>
-                <li>3 TBSP plain Greek yogurt</li>
-                <li>2 oz feta cheese</li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
+    <div class="card card-1">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Mac and Cheese in a Mug</h2>
+      <p class="card__apply">
+        <a class="card__link" href="https://www.thebettermartha.com/2013/07/the-better-instant-mac-cheese-in-mug.html">View Recipe Here <i class="fas fa-arrow-right"></i></a>
+      </p>
     </div>
-    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
-    <script src="../js/wild.js"></script>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        //The first argument are the elements to which the plugin shall be initialized
-        //The second argument has to be at least a empty object or a object with your desired options
-        OverlayScrollbars(document.querySelectorAll("body"), { });
-        });
-        </script>  
-  </body>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+
+ 
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
 </html>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
+
+            
+              
+          
