@@ -1,128 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="randomList.css" />
-    <link rel="stylesheet" href="../css/contact.css">
-    <title>Recipe Generator</title>
+<html>
+<head>
+<title>Randomizer</title>
+    <link rel="shortcut icon" href="/images/Icon.jpeg" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+<style>
+body {font-family: "Merriweather", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
 
-<link rel="shortcut icon" href="/images/Icon.jpeg" type="image/x-icon">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  body {
+  background-color:#E6C799;
+}
 
-  </head>
-  <body>
+.button-primary {
+  background-color: #A44704;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  
+</style>
 
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+ <nav class="navbar" role="navigation" aria-label="main navigation">
  <div class="navbar-brand">  
-  <img src="/images/Icon.jpeg" width="60" height="135"
+  <img src="/images/Icon.jpeg" width="50" height="45"
     </nav>
-    </div>
-  
-    <div class="navbar-menu">
+  </div>
     
-      <div class="navbar-end">
-  
-        <a class="navbar-item" 
-          href="index.html">
-          HOME
-        </a>
-
-        <a class="navbar-item"
-          href="Recipe.html">
-          RECIPES
-        </a>
-
-        <a class="navbar-item"
-          href="moreRecipes.html">
-          SPECIFIC RECIPES
-        </a>
-        
-        <a class="navbar-item"   
-          href="groceryList.html">
-          GROCERY LIST
-        </a>
-
-         <a class="navbar-item" 
-          href="randomList.html">
-          NEED IDEAS?
-        </a>
-        
-      </div>
+</head>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="Recipe.html" class="w3-bar-item w3-button">General Recipes</a>
+      <a href="moreRecipes.html" class="w3-bar-item w3-button">Specific Recipes</a>
+      <a href="groceryList.html" class="w3-bar-item w3-button">Grocery List</a>
+      <a href="randomList.html" class="w3-bar-item w3-button">Need Ideas?</a>
     </div>
-  </nav>
+  </div>
+</div>
 
-    <div class="container"> 
-      <div class="row text-center"
-    <h3>Hunger Games Recipe Generator</h3>
-      <button id="get_meal" class="button-primary">Get Receipe</button>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://files.slack.com/files-pri/T03MU5QKHA9-F03S88NQFPB/screenshot_2022-08-01_142149.png" alt="The Hunger Games Logo" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">The Hunger Games</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://files.slack.com/files-pri/T03MU5QKHA9-F03S88NQFPB/screenshot_2022-08-01_142149.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Stumped, Need Inspiration?</h1><br>
+      <h5 class="w3-center">Use our Randomizd Receipe Generator!</h5>
+      <p class="w3-large"> We know that looking for a new recipe to make can be hard, so we did it for you! This one of a kind recipe generator will have you cooking in no Time! Just make sure you make enough for you're roommate too! 
+       
+      <p class="w3-large w3-text-black w3-hide-medium">Just click the button below to start your culinary journey! The website will spit out a recipe that includes a picture, instructions, ingredients, and a helpful video!</p>
+    </div>
+  </div>
+  
+<!--    <title>Recipe Generator</title> -->
+<!--   </head> -->
+<!--   <body> -->
+    <div class="container">
+        <div class="row text-center">
+      <h3>Start Here!</h3>
+      <button id="get_meal" class="button-primary">Get Recipe</button>
     </div>
     <div id="meal" class="row meal"></div>
-    <script src="randomList.js"></script>
-    <footer class="footer-distributed">
-
-  <div class="footer-left">
+    <script src="script.js"></script>
+</body>
+      
     
-    <h3>Hunger Games</h3>
-      <p>@CSSI '22- Karimah, Mychael, Trinity</p>
-    
-
-    <p class="footer-company-name">The Hunger Games © 2022</p>
-  </div>
-
-  <div class="footer-center">
-
-    <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-    </div>
-
-    <div>
-      <i class="fa fa-phone"></i>
-      <p>+1.555.555.5555</p>
-    </div>
-
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:support@company.com">support@hungergames</a></p>
-    </div>
-
-  </div>
-
-  <div class="footer-right">
-
-    <p class="footer-company-about">
-      <span>About HUNGER GAMES</span>
-      College dorm students shouldn't encounter any trouble figuring out what to eat. So, in order to provide recipe ideas and a grocery list feature, we established this website.
-    </p>
-
-    <div class="footer-icons">
-
-      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.github.com/"><i class="fa fa-github"></i></a>
-
-    </div>
-
-  </div>
-
-</footer>
-  </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
+  
+  
