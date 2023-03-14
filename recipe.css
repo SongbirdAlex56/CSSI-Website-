@@ -123,6 +123,7 @@ body {
 .img-flex {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 .card-2 {
@@ -131,24 +132,54 @@ body {
 .img-flex {
   display: block;
   width: 50%;
+  object-fit: cover;
 }
 .card-3 {
   background: radial-gradient(#D67D3E, #91684A);
-
 }
 .img-flex {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 .card-4 {
   background: radial-gradient(#D67D3E, #91684A);
 }
+.img-flex {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
 
 .card-5 {
   background: radial-gradient(#603601, #361500);
 }
+.img-flex {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
 
+.card-7 {
+  background: radial-gradient(#D67D3E, #91684A);
+}
+.img-flex {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-8 {
+  background: radial-gradient(#470D21,#D67D3E );
+
+}
+.img-flex {
+  display: block;
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1600px) {

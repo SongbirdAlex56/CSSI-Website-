@@ -1,21 +1,24 @@
-<!DOCTYPE html>
+b <!DOCTYPE html>
 <html>
 <head>
-<title>Randomizer</title>
-    <link rel="shortcut icon" href="/images/Icon.jpeg" type="image/x-icon">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randomizer</title>
+  <link rel="shortcut icon" href="/images/Icon.jpeg" type="image/x-icon">
+   <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  
-<style>
-body {font-family: "Merriweather", Georgia, Serif;}
+
+  <style>
+/* body {font-family: "Times New Roman", Georgia, Serif;} */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
 
   body {
-  background-color:#E6C799;
+  background-color: #E6C799;
+    font-family:  ‘Merriweather’, Georgia, serif;
 }
 
 .button-primary {
@@ -31,33 +34,30 @@ h1, h2, h3, h4, h5, h6 {
 
   
 </style>
-
-
-  <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
- <nav class="navbar" role="navigation" aria-label="main navigation">
- <div class="navbar-brand">  
-  <img src="/images/Icon.jpeg" width="50" height="45"
-    </nav>
-  </div>
-    
 </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="/images/Icon.jpeg" width="45" height="55"
+    <a href="index.html" class="w3-bar-item w3-button">Hunger Games</a>
+    
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="Recipe.html" class="w3-bar-item w3-button">General Recipes</a>
-      <a href="moreRecipes.html" class="w3-bar-item w3-button">Specific Recipes</a>
-      <a href="groceryList.html" class="w3-bar-item w3-button">Grocery List</a>
-      <a href="randomList.html" class="w3-bar-item w3-button">Need Ideas?</a>
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="Recipe.html" class="w3-bar-item w3-button">GENERAL RECIPES</a>
+      <a href="moreRecipes.html" class="w3-bar-item w3-button">SPECIFIC RECIPES</a>
+      <a href="groceryList.html" class="w3-bar-item w3-button">GROCERY LIST</a>
+      <a href="randomList.html" class="w3-bar-item w3-button">NEED IDEAS</a>
     </div>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="https://files.slack.com/files-pri/T03MU5QKHA9-F03S88NQFPB/screenshot_2022-08-01_142149.png" alt="The Hunger Games Logo" width="1600" height="800">
   <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">The Hunger Games</h1>
+   <h1 class="w3-xxlarge">The Hunger Games</h1>
   </div>
 </header>
 
@@ -67,32 +67,26 @@ h1, h2, h3, h4, h5, h6 {
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="https://files.slack.com/files-pri/T03MU5QKHA9-F03S88NQFPB/screenshot_2022-08-01_142149.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     <img src="/images/Icon.jpeg" class="w3-round w3-image w3-opacity-min" alt="" width="600" height="750">
     </div>
 
     <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Stumped, Need Inspiration?</h1><br>
-      <h5 class="w3-center">Use our Randomizd Receipe Generator!</h5>
-      <p class="w3-large"> We know that looking for a new recipe to make can be hard, so we did it for you! This one of a kind recipe generator will have you cooking in no Time! Just make sure you make enough for you're roommate too! 
-       
-      <p class="w3-large w3-text-black w3-hide-medium">Just click the button below to start your culinary journey! The website will spit out a recipe that includes a picture, instructions, ingredients, and a helpful video!</p>
+      <h1 class="w3-center">The Hunger Games Recipe Generator</h1><br>
+      <h5 class="w3-center">Need Inspiration? Look here!</h5>
+      <p class="w3-large w3-text-black w3-hide-medium">We know that coming up with website ideas can be challenging. That is why we created this recipe generator to assist you! Use the brand-new recipe generator for The Hunger Games instead of spending hours browsing the internet for recipes.  </p>
+      <p class="w3-large w3-text-black w3-hide-medium">Simply select "get recipe" to begin creating your culinary masterpiece! Each recipe comes with a video, steps, ingredients, and a recipe.</p>
     </div>
   </div>
-  
-<!--    <title>Recipe Generator</title> -->
-<!--   </head> -->
-<!--   <body> -->
-    <div class="container">
+
+  <div class="container">
         <div class="row text-center">
-      <h3>Start Here!</h3>
+      <h3>Hunger Games Recipe Generator</h3>
       <button id="get_meal" class="button-primary">Get Recipe</button>
     </div>
     <div id="meal" class="row meal"></div>
-    <script src="script.js"></script>
-</body>
-      
-    
-</html>
 
+    <script src="randomList.js"></script>
+</div>
   
-  
+</body>
+</html>
